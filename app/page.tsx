@@ -1,5 +1,12 @@
+import { Button } from "@/components/ui/button";
+
 const Homepage = () => {
-  return <>EStore</>;
+  return (
+    <>
+      EStore
+      <Button>Testing</Button>
+    </>
+  );
 };
 
 export default Homepage;
