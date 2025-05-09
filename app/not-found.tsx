@@ -9,8 +9,8 @@ const NotFound = () => {
       <Image
         src={"/images/logo.svg"}
         alt=""
-        height={200}
-        width={200}
+        height={100}
+        width={100}
         priority={true}
       />
       <div className="p-6 w-1/3 rounded-lg shadow-lg text-center">

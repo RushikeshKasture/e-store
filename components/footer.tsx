@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="border-t">
-      <div className="p-5 flex-center">
+      <div className="p-5 flex justify-center items-center">
         {currentYear} {APP_NAME}. All Right Reserved
       </div>
     </footer>
