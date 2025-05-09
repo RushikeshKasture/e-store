@@ -5,17 +5,16 @@ const ProductPrice = ({
   value,
   className,
 }: {
-  value: number;
+  value: string;
   className?: string;
 }) => {
-  const stringPriceValue = value.toFixed(2);
-  const [integerPart, decimalPart] = stringPriceValue.split(".");
+  const [integerPart, decimalPart] = value.split(".");
 
   return (
     <p className={cn("text-2xl", className)}>
       <span className="text-xs align-super">₹</span>
       {integerPart}
-      <span className="text-xs align-super">{decimalPart}</span>
+      <span className="text-xs align-super">.{decimalPart}</span>
     </p>
   );
 };
