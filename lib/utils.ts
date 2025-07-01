@@ -37,3 +37,13 @@ export async function formatError(error: any) {
       : JSON.stringify(error.message);
   }
 }
+
+export function roundToTwoDecimalPlaces(num: number | string) {
+  if (typeof num === "string") {
+    return Math.round((Number(num) + Number.EPSILON) * 100) / 100;
+  } else if (typeof num === "number") {
+    return Math.round((num + Number.EPSILON) * 100) / 100;
+  } else {
+    throw new Error("Input must be a number or a string representing a number");
+  }
+}
